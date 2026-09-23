@@ -1,0 +1,1380 @@
+{
+	"id": "661f04b2-0dd8-4dc3-a5ae-b2e637944d2a",
+	"name": "ReqRes_APT_Testing",
+	"timestamp": "2026-09-23T03:49:47.583Z",
+	"collection_id": "58252597-d28afc42-88e4-4bd1-99f9-e5527ce3ebdc",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 91,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-09-23T03:49:36.684Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "61dfa2bc-6688-4ce8-bf9b-4e817627fc90",
+			"name": "List Users",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 746,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is JSON": true,
+				"Page is 2": true,
+				"Data is an array": true,
+				"User records are present": true,
+				"Required pagination fields exist": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Page is 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User records are present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Required pagination fields exist": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				746
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is JSON": true,
+					"Page is 2": true,
+					"Data is an array": true,
+					"User records are present": true,
+					"Required pagination fields exist": true
+				}
+			]
+		},
+		{
+			"id": "1a01a00c-f02f-47da-b191-0a78454b4eac",
+			"name": "List User page 1",
+			"url": "https://reqres.in/api/users?page=1",
+			"time": 242,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Page is 1": true,
+				"Data is an array": true,
+				"Users are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Page is 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Users are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				242
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Page is 1": true,
+					"Data is an array": true,
+					"Users are returned": true
+				}
+			]
+		},
+		{
+			"id": "05b987bc-2060-474c-a8d1-4e55e608218e",
+			"name": "List User page 2",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 201,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Page is 2": true,
+				"Data is an array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Page is 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				201
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Page is 2": true,
+					"Data is an array": true
+				}
+			]
+		},
+		{
+			"id": "6697f7a7-cc74-44e8-98a9-acf1c8cfba8a",
+			"name": "Single User 1",
+			"url": "https://reqres.in/api/users/2",
+			"time": 247,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is JSON": true,
+				"User data exists": true,
+				"User ID is 2": true,
+				"Required user fields exist": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User data exists": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User ID is 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Required user fields exist": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				247
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is JSON": true,
+					"User data exists": true,
+					"User ID is 2": true,
+					"Required user fields exist": true
+				}
+			]
+		},
+		{
+			"id": "e5462af0-1b81-42e1-bdca-69448b6a36d3",
+			"name": "single user 2",
+			"url": "https://reqres.in/api/users/1",
+			"time": 247,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"User ID is 1": true,
+				"Email exists": true,
+				"First name exists": true,
+				"Last name exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User ID is 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email exists": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First name exists": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Last name exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				247
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"User ID is 1": true,
+					"Email exists": true,
+					"First name exists": true,
+					"Last name exists": true
+				}
+			]
+		},
+		{
+			"id": "2dc46564-76b0-4b1b-85da-cefc380ec3c8",
+			"name": "Invalid User",
+			"url": "https://reqres.in/api/users/9999",
+			"time": 246,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response is JSON": true,
+				"Error response exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error response exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				246
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response is JSON": true,
+					"Error response exists": true
+				}
+			]
+		},
+		{
+			"id": "f916f65e-83b2-4ae3-8479-a1eea096dd46",
+			"name": "Invalid User Id",
+			"url": "https://reqres.in/api/users/abc",
+			"time": 243,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response has client/error status": true,
+				"Response is received": true
+			},
+			"testPassFailCounts": {
+				"Response has client/error status": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				243
+			],
+			"allTests": [
+				{
+					"Response has client/error status": true,
+					"Response is received": true
+				}
+			]
+		},
+		{
+			"id": "e68dce18-5014-4c93-85d4-5175f02bef08",
+			"name": "Missing Page Parameter",
+			"url": "https://reqres.in/api/users",
+			"time": 266,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is received": true,
+				"Response is JSON": true,
+				"Response has expected structure": true
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has expected structure": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				266
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"Response is JSON": true,
+					"Response has expected structure": true
+				}
+			]
+		},
+		{
+			"id": "380aa427-bc08-4aa9-ae56-01e3a3da9f44",
+			"name": "Invalid Endpoint",
+			"url": "https://reqres.in/api/invalidendpoint",
+			"time": 237,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Error response is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error response is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Error response is returned": true
+				}
+			]
+		},
+		{
+			"id": "a2cc76ba-ea59-41f8-b69c-5a8a24db018a",
+			"name": "Unknown Resource",
+			"url": "https://reqres.in/api/unknown/999",
+			"time": 238,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response is JSON": true,
+				"Error response exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error response exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				238
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response is JSON": true,
+					"Error response exists": true
+				}
+			]
+		},
+		{
+			"id": "2e761960-a72c-4187-ae30-01151a14deb6",
+			"name": "create User",
+			"url": "https://reqres.in/api/users",
+			"time": 239,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response is JSON": true,
+				"Name is correct": true,
+				"Job is correct": true,
+				"ID is generated": true,
+				"createdAt exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job is correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID is generated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"createdAt exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				239
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response is JSON": true,
+					"Name is correct": true,
+					"Job is correct": true,
+					"ID is generated": true,
+					"createdAt exists": true
+				}
+			]
+		},
+		{
+			"id": "9d87125f-e4ae-4721-b143-8a503ee2e5fb",
+			"name": "Create user empty body",
+			"url": "https://reqres.in/api/users",
+			"time": 219,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status is an error or documented success": true,
+				"Response is received": true
+			},
+			"testPassFailCounts": {
+				"Response status is an error or documented success": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				219
+			],
+			"allTests": [
+				{
+					"Response status is an error or documented success": true,
+					"Response is received": true
+				}
+			]
+		},
+		{
+			"id": "f98d34b0-81d0-4b76-812d-df9ae169358e",
+			"name": "Create User Missing name",
+			"url": "https://reqres.in/api/users",
+			"time": 215,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response is received": true,
+				"API handles missing name": true
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"API handles missing name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				215
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"API handles missing name": true
+				}
+			]
+		},
+		{
+			"id": "806e016a-d6a3-47da-9290-74a38f8ecc9b",
+			"name": "Create user missing job",
+			"url": "https://reqres.in/api/users",
+			"time": 222,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response is received": true,
+				"API handles missing job": true
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"API handles missing job": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				222
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"API handles missing job": true
+				}
+			]
+		},
+		{
+			"id": "7a38e7ab-935f-4929-b7a3-1b9639cc0bc4",
+			"name": "New Request",
+			"url": "https://reqres.in/api/users",
+			"time": 209,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"API returns a response": true,
+				"Response is not a successful creation": true
+			},
+			"testPassFailCounts": {
+				"API returns a response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is not a successful creation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"API returns a response": true,
+					"Response is not a successful creation": true
+				}
+			]
+		},
+		{
+			"id": "bfd148c7-a3f2-4681-801d-e5291cb9bbeb",
+			"name": "Create user invalid JSON",
+			"url": "https://reqres.in/api/users",
+			"time": 221,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"API returns a response": true,
+				"Response is not a successful creation": true
+			},
+			"testPassFailCounts": {
+				"API returns a response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is not a successful creation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"API returns a response": true,
+					"Response is not a successful creation": true
+				}
+			]
+		},
+		{
+			"id": "972f7638-ff05-43fa-bb1f-24bd318f19ae",
+			"name": "Create User Extra Field",
+			"url": "https://reqres.in/api/users",
+			"time": 246,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response is received": true,
+				"Response is JSON": true
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				246
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"Response is JSON": true
+				}
+			]
+		},
+		{
+			"id": "05128d3a-d079-428c-afeb-d84b7d58ef08",
+			"name": "Update User 1",
+			"url": "https://reqres.in/api/users/2",
+			"time": 220,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name is updated": true,
+				"Job is updated": true,
+				"updatedAt exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				220
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name is updated": true,
+					"Job is updated": true,
+					"updatedAt exists": true
+				}
+			]
+		},
+		{
+			"id": "dbd908e8-352c-4471-9a44-24e8b0fb3c2d",
+			"name": "Update User 2",
+			"url": "https://reqres.in/api/users/1",
+			"time": 223,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Updated name is correct": true,
+				"Updated job is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Updated name is correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Updated job is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				223
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Updated name is correct": true,
+					"Updated job is correct": true
+				}
+			]
+		},
+		{
+			"id": "6ceffe49-ae38-4772-bc6e-3fd9ada2a15f",
+			"name": "Update User 3",
+			"url": "https://reqres.in/api/users/2",
+			"time": 242,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name is updated": true,
+				"Job is updated": true,
+				"updatedAt exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				242
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name is updated": true,
+					"Job is updated": true,
+					"updatedAt exists": true
+				}
+			]
+		},
+		{
+			"id": "add5ab35-93a0-4475-8435-8907ff833873",
+			"name": "Update Invalid User",
+			"url": "https://reqres.in/api/users/9999",
+			"time": 319,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Error or appropriate response is returned": true,
+				"Response is a successful update": true
+			},
+			"testPassFailCounts": {
+				"Error or appropriate response is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is a successful update": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				319
+			],
+			"allTests": [
+				{
+					"Error or appropriate response is returned": true,
+					"Response is a successful update": true
+				}
+			]
+		},
+		{
+			"id": "fb12a01f-41b8-44cf-a949-6393cdab8dbb",
+			"name": "Update empty body",
+			"url": "https://reqres.in/api/users/2",
+			"time": 216,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is received": true,
+				"API handles empty body": true
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"API handles empty body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				216
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"API handles empty body": true
+				}
+			]
+		},
+		{
+			"id": "8ddb30de-24a3-4adf-81e6-cdd94c81559a",
+			"name": "Update invalid json",
+			"url": "https://reqres.in/api/users/2",
+			"time": 194,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Response is received": true,
+				"Invalid JSON is not treated as successful update": true
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Invalid JSON is not treated as successful update": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"Invalid JSON is not treated as successful update": true
+				}
+			]
+		},
+		{
+			"id": "c66ec26e-3a56-4efd-bf1d-f30decea80cc",
+			"name": "Partial Update User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 313,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name is updated": true,
+				"updatedAt exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				313
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name is updated": true,
+					"updatedAt exists": true
+				}
+			]
+		},
+		{
+			"id": "568c5b3a-a021-4900-bbea-009ca1ad9e85",
+			"name": "Partially update users 2",
+			"url": "https://reqres.in/api/users/2",
+			"time": 234,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Job is updated": true,
+				"updatedAt exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Job is updated": true,
+					"updatedAt exists": true
+				}
+			]
+		},
+		{
+			"id": "de865833-593c-4902-8bae-dbbdea6b7215",
+			"name": "Partial Update Multiple Fields",
+			"url": "https://reqres.in/api/users/2",
+			"time": 234,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name is updated": true,
+				"Job is updated": true,
+				"updatedAt exists": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job is updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name is updated": true,
+					"Job is updated": true,
+					"updatedAt exists": true
+				}
+			]
+		},
+		{
+			"id": "679b336d-d5ae-4b7d-9c72-9cc53f466456",
+			"name": "Partial Update Invalid User",
+			"url": "https://reqres.in/api/users/9999",
+			"time": 220,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is received": true,
+				"Invalid user is not treated as successful update": false
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Invalid user is not treated as successful update": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				220
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"Invalid user is not treated as successful update": false
+				}
+			]
+		},
+		{
+			"id": "276bbc53-b966-4c8c-ac02-3b88338be267",
+			"name": "Partial Update Empty Body",
+			"url": "https://reqres.in/api/users/2",
+			"time": 212,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is received": true,
+				"API handles empty PATCH body": true
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"API handles empty PATCH body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				212
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"API handles empty PATCH body": true
+				}
+			]
+		},
+		{
+			"id": "7f18a175-27aa-40fb-91a5-43ab2d6c513d",
+			"name": "Delete User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 267,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				267
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response body is empty": true
+				}
+			]
+		},
+		{
+			"id": "357cb0da-f9cc-47f6-be01-ca1f32390192",
+			"name": "delete users 1",
+			"url": "https://reqres.in/api/users/1",
+			"time": 224,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				224
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response body is empty": true
+				}
+			]
+		},
+		{
+			"id": "5823bcd7-e02b-45d4-9309-d128c26aff6b",
+			"name": "Delete Invalid User",
+			"url": "https://reqres.in/api/users/9999",
+			"time": 275,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response is received": true,
+				"Response is an acceptable API response": true
+			},
+			"testPassFailCounts": {
+				"Response is received": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an acceptable API response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"Response is received": true,
+					"Response is an acceptable API response": true
+				}
+			]
+		},
+		{
+			"id": "761bb655-2382-4da0-a4ed-46abf910ac4b",
+			"name": "Delete Invalid Endpoint",
+			"url": "https://reqres.in/api/invalid",
+			"time": 216,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 404": false,
+				"Error response is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Error response is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				216
+			],
+			"allTests": [
+				{
+					"Status code is 404": false,
+					"Error response is returned": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 8093,
+	"collection": {
+		"requests": [
+			{
+				"id": "61dfa2bc-6688-4ce8-bf9b-4e817627fc90",
+				"method": "GET"
+			},
+			{
+				"id": "1a01a00c-f02f-47da-b191-0a78454b4eac",
+				"method": "GET"
+			},
+			{
+				"id": "05b987bc-2060-474c-a8d1-4e55e608218e",
+				"method": "GET"
+			},
+			{
+				"id": "6697f7a7-cc74-44e8-98a9-acf1c8cfba8a",
+				"method": "GET"
+			},
+			{
+				"id": "e5462af0-1b81-42e1-bdca-69448b6a36d3",
+				"method": "GET"
+			},
+			{
+				"id": "2dc46564-76b0-4b1b-85da-cefc380ec3c8",
+				"method": "GET"
+			},
+			{
+				"id": "f916f65e-83b2-4ae3-8479-a1eea096dd46",
+				"method": "GET"
+			},
+			{
+				"id": "e68dce18-5014-4c93-85d4-5175f02bef08",
+				"method": "GET"
+			},
+			{
+				"id": "380aa427-bc08-4aa9-ae56-01e3a3da9f44",
+				"method": "GET"
+			},
+			{
+				"id": "a2cc76ba-ea59-41f8-b69c-5a8a24db018a",
+				"method": "GET"
+			},
+			{
+				"id": "2e761960-a72c-4187-ae30-01151a14deb6",
+				"method": "POST"
+			},
+			{
+				"id": "9d87125f-e4ae-4721-b143-8a503ee2e5fb",
+				"method": "POST"
+			},
+			{
+				"id": "f98d34b0-81d0-4b76-812d-df9ae169358e",
+				"method": "POST"
+			},
+			{
+				"id": "806e016a-d6a3-47da-9290-74a38f8ecc9b",
+				"method": "POST"
+			},
+			{
+				"id": "7a38e7ab-935f-4929-b7a3-1b9639cc0bc4",
+				"method": "POST"
+			},
+			{
+				"id": "bfd148c7-a3f2-4681-801d-e5291cb9bbeb",
+				"method": "POST"
+			},
+			{
+				"id": "972f7638-ff05-43fa-bb1f-24bd318f19ae",
+				"method": "POST"
+			},
+			{
+				"id": "05128d3a-d079-428c-afeb-d84b7d58ef08",
+				"method": "PUT"
+			},
+			{
+				"id": "dbd908e8-352c-4471-9a44-24e8b0fb3c2d",
+				"method": "PUT"
+			},
+			{
+				"id": "6ceffe49-ae38-4772-bc6e-3fd9ada2a15f",
+				"method": "PUT"
+			},
+			{
+				"id": "add5ab35-93a0-4475-8435-8907ff833873",
+				"method": "PUT"
+			},
+			{
+				"id": "fb12a01f-41b8-44cf-a949-6393cdab8dbb",
+				"method": "PUT"
+			},
+			{
+				"id": "8ddb30de-24a3-4adf-81e6-cdd94c81559a",
+				"method": "PUT"
+			},
+			{
+				"id": "c66ec26e-3a56-4efd-bf1d-f30decea80cc",
+				"method": "PATCH"
+			},
+			{
+				"id": "568c5b3a-a021-4900-bbea-009ca1ad9e85",
+				"method": "PATCH"
+			},
+			{
+				"id": "de865833-593c-4902-8bae-dbbdea6b7215",
+				"method": "PATCH"
+			},
+			{
+				"id": "679b336d-d5ae-4b7d-9c72-9cc53f466456",
+				"method": "PATCH"
+			},
+			{
+				"id": "276bbc53-b966-4c8c-ac02-3b88338be267",
+				"method": "PATCH"
+			},
+			{
+				"id": "7f18a175-27aa-40fb-91a5-43ab2d6c513d",
+				"method": "DELETE"
+			},
+			{
+				"id": "357cb0da-f9cc-47f6-be01-ca1f32390192",
+				"method": "DELETE"
+			},
+			{
+				"id": "5823bcd7-e02b-45d4-9309-d128c26aff6b",
+				"method": "DELETE"
+			},
+			{
+				"id": "761bb655-2382-4da0-a4ed-46abf910ac4b",
+				"method": "DELETE"
+			}
+		]
+	}
+}
